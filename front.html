@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="head-box">
+        <h1>STUDENT PROFILE DASHBOARD</h1>
+
+    </header>
+    <section class="sec-box">
+    <h2>Enter Details</h2>
+
+        <label>Name:</label>
+        <input type="text" id="name"><br><br>
+
+        <label>Course:</label>
+        <input type="text" id="course"><br><br>
+
+        <h3>Skills:</h3>
+        <ul>
+            <li><input type="text" id="skill1" placeholder="Skill 1"></li><br>
+            <li><input type="text" id="skill2" placeholder="Skill 2"></li><br>
+            <li><input type="text" id="skill3" placeholder="Skill 3"></li><br>
+            <li><input type="text" id="skill4" placeholder="Skill 4"></li><br>
+            <li><input type="text" id="skill5" placeholder="Skill 5"></li><br>
+        </ul>
+
+        <button onclick="showProfile()">Show Profile</button>
+        <button onclick="hideProfile()">Hide</button>
+    </section>
+
+   
+
+    <div id="profile">
+        <h2>Student Profile</h2>
+        <p><strong>Name:</strong> <span id="displayName"></span></p>
+        <p><strong>Course:</strong> <span id="displayCourse"></span></p>
+
+        <h3>Skills:</h3>
+        <ul id="displaySkills"></ul>
+    </div>
+
+   
+
+    </section>
+
+
+    <script src="with.js"></script>
+    
+</body>
+</html>
