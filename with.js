@@ -13,6 +13,8 @@ function showProfile() {
         document.getElementById("skill5").value
     ];
 
+    let skillList=skills.map(skill=>`<li>${skill}</li>`).join('');
+
  
 
     document.getElementById("displaySkills").innerHTML = skillList;
